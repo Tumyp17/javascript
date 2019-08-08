@@ -12,9 +12,12 @@
 	
 	alert("Вопрос номер 1");
 
+
 		var userAnswer1 = prompt("Какое дерево стояло 'Во поле' в русской народной песне?");
-		
-		if(userAnswer1 == "Берёзка" || "Березка" || "Берёза" || "Береза" || "берёзка" || "березка" || "берёза" || "береза"){
+
+		answer1 = answer1.toLowerCase();
+
+		if(userAnswer1 == answer1){
 			t++;
 		} 
 
@@ -22,7 +25,9 @@
 
 		var userAnswer2 = prompt("Что длится 365 дней?");
 		
-		if(userAnswer2 == "Год" || "год"){
+		answer2 = answer2.toLowerCase();
+
+		if(userAnswer2 == answer2){
 			t++;
 		} 
 
@@ -30,7 +35,7 @@
 
 		var userAnswer3 = prompt("Кто пропел 'Лето красное' в басне Крылова?")
 			
-			if(userAnswer3 == "Стрекоза" || "стрекоза"){
+			if(userAnswer3 == answer3){
 			t++;
 		} 
 
