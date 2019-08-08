@@ -27,6 +27,7 @@
 		var userAnswer2 = prompt("Что длится 365 дней?");
 		
 		answer2 = answer2.toLowerCase();
+		userAnswer2 = userAnswer2.toLowerCase();
 
 		if(userAnswer2 == answer2){
 			answerCount++;
@@ -36,10 +37,13 @@
 
 		var userAnswer3 = prompt("Кто пропел 'Лето красное' в басне Крылова?")
 			
+			answer3 = answer3.toLowerCase();
+			userAnswer3 = userAnswer3.toLowerCase();
+
 			if(userAnswer3 == answer3){
 			answerCount++;
 		} 
 
-		alert("Вы угадали: " + answerCount + " правильных ответа\nОтвет на Вопрос 1: " + answer1 + "\nОтвет на Вопрос 2: " + answer2 + "\nОтвет на Вопрос 3: " + answer3)
+		alert("Количество правильных ответов: " + answerCount + "\nОтвет на Вопрос 1: " + answer1 + "\nОтвет на Вопрос 2: " + answer2 + "\nОтвет на Вопрос 3: " + answer3)
 
 </script>
