@@ -4,7 +4,7 @@
 	var answer1 = "Березка" 
 	var answer2 = "Год";
 	var answer3 = "Стрекоза";
-	var t = 0
+	var answerCount = 0
 
 	alert("Вам будет предложено ответить на 3 вопроса. \nОтветом на вопрос является слово написанное кириллицей в единственном числе");
 
@@ -18,7 +18,7 @@
 		answer1 = answer1.toLowerCase();
 
 		if(userAnswer1 == answer1){
-			t++;
+			answerCount++;
 		} 
 
 	alert("Вопрос номер 2");
@@ -28,7 +28,7 @@
 		answer2 = answer2.toLowerCase();
 
 		if(userAnswer2 == answer2){
-			t++;
+			answerCount++;
 		} 
 
 	alert("Вопрос номер 3")
@@ -36,10 +36,8 @@
 		var userAnswer3 = prompt("Кто пропел 'Лето красное' в басне Крылова?")
 			
 			if(userAnswer3 == answer3){
-			t++;
+			answerCount++;
 		} 
-
-		var answerCount = t
 
 		alert("Вы угадали: " + answerCount + " правильных ответа\nОтвет на Вопрос 1: " + answer1 + "\nОтвет на Вопрос 2: " + answer2 + "\nОтвет на Вопрос 3: " + answer3)
 
